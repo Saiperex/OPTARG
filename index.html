@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTAG - INMOBILIARIA Y DESARROLLOS</title>
+</head>
+
+<body class="cuerpo">
+    <header class="cabecera">
+        <div class="cabecera_mid">
+            <a href=""><img src="LOGO_MAIN_TRANSP.png" alt="Logo"></a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="">Propiedades</a></li>
+                    <li><a href="">Novedades</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">FaQ</a></A></li>
+                    <li><a href="">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('img/propiedad1.webp');">
+                    <div class="blur_conteiner">
+                        <div class="swiper_center">
+                            <h2>Encuentra la casa de tus sueños</h2>
+                            <h4>Casas en venta que se adaptan a tu estilo de vida</h4>
+                            <p>Explora una amplia variedad de opciones, desde modernas hasta clásicas, en las mejores
+                                ubicaciones. Tu nuevo hogar te espera.</p>
+                            <a href="">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/propiedad2.webp');">
+                    <div class="blur_conteiner">
+                        <div class="swiper_center">
+                            <h2>Casas en alquiler, listas para mudarte</h2>
+                            <h4>Comodidad y conveniencia a solo un paso</h4>
+                            <p>Alquila la casa ideal para tu familia, en zonas de alta demanda. ¡Haz tuya una propiedad
+                                cómoda, accesible y bien ubicada hoy mismo!</p>
+                            <a href="">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/propiedad3.webp');">
+                    <div class="blur_conteiner">
+                        <div class="swiper_center">
+                            <h2>Vive el lujo.</h2>
+                            <h4>Descubre nuestras propiedades Premium.</h4>
+                            <p>Disfruta de elegancia y exclusividad en cada rincón. Encuentra la propiedad Premium
+                                perfecta para tu estilo de vida único.</p>
+                            <a href="">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/propiedad4.webp');">
+                    <div class="blur_conteiner">
+                        <div class="swiper_center">
+                            <h2>Tu futuro empieza aquí</h2>
+                            <h4>Terrenos disponibles en las mejores ubicaciones</h4>
+                            <p>Invierte en el lugar perfecto para tu proyecto. Terrenos amplios y bien ubicados, ideales
+                                para construir la propiedad de tus sueños.</p>
+                            <a href="">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section class="buscador">
+            <div class="buscador_propiedades">
+                <label>Filtros de Propiedad</label>
+                <div class="filtros">
+                    <input type="text" name="nombre_propiedad" id="nombre_propiedad" placeholder="Buscar Propiedades">
+                    <select name="operation" id="operation">
+                        <option value="0">No se seleccionó</option>
+                        <option value="COMPRA">Compra</option>
+                        <option value="VENTA">Venta</option>
+                        <option value="ALQUILER">Alquiler</option>
+                    </select>
+                    <select name="moneda" id="moneda">
+                        <option value="0">Cualquier moneda</option>
+                        <option value="USD">Dolares</option>
+                        <option value="ARS">Pesos Argentinos</option>
+                        <option value="EUR">Euros</option>
+                        <option value="CRY">CRIPTO</option>
+                    </select>
+                    <select name="tipo_propiedad" id="tipo_propiedad">
+                        <option value="0">Todas las Propiedades</option>
+                        <option value="CASA">Casa</option>
+                        <option value="DEPTO">Departamento</option>
+                        <option value="CHALET">Chalet</option>
+                        <option value="TERRENO">Terreno</option>
+                    </select>
+                </div>
+                <label>Filtros geograficos</label>
+                <div class="filtros">
+                    <select name="pais" id="pais">
+                        <option value="0">Cualquier País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                    </select>
+                    <select name="provincia" id="provincia">
+                        <option value="0">Cualquier provincia</option>
+                        <option value="CBA">Córdoba</option>
+                        <option value="TUC">Tucuman</option>
+                    </select>
+                </div>
+                <button>Buscar tu proxima Propiedad</button>
+            </div>
+        </section>
+        <section class="nuevas_prop">
+            <h2>Nuevas Propiedades</h2>
+            <div class="resultados">
+                <div class="propiedad"></div>
+                <div class="propiedad"></div>
+                <div class="propiedad"></div>
+                <div class="propiedad"></div>
+                <div class="propiedad"></div>
+                <div class="propiedad"></div>
+            </div>
+            <a href="">Ver más</a>
+        </section>
+        <div class="custom-shape-divider-bottom-1737660106">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <section class="nosotros">
+            <div class="nosotros_content">
+                <div class="noscont nosotros_content-text">
+                    <h1>Descubre Oportunidades Inmobiliarias Únicas con OPTARG</h1>
+                    <p>En OPTARG, transformamos tus sueños en realidad. Ya sea que busques comprar, vender, alquilar o invertir, te ofrecemos un portafolio exclusivo de propiedades de alto valor y proyectos innovadores que se adaptan a tus necesidades.</p>
+                    <p> con un equipo de expertos apasionados por ayudarte a encontrar el espacio perfecto, con las mejores ubicaciones y la calidad que mereces. ¡El próximo gran paso en tu vida está a solo un clic de distancia!</p>
+                    <p>Estás listo para dar el siguiente paso? Descubre todo lo que tenemos para ofrecerte.</p>
+                    <a href="">¡Haz clic aquí y comienza tu viaje inmobiliario hoy mismo!</a>
+                </div>
+                <div class="noscont nosotros_content-img"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie"></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper",
+        {
+            slidesPerView: 1,
+            loop: true,
+            autoplay:
+            {
+                delay: 2500,
+                disableOnInteraction: true,
+            },
+            pagination:
+            {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
+        });
+</script>
+
+</html>
