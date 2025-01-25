@@ -34,6 +34,7 @@
 {
     display: flex;
     justify-content: center;
+    background-color: #3e3e3e;
 }
 .cabecera_mid
 {
@@ -59,12 +60,13 @@
 {
     margin:0 10px;
     position: relative;
+    z-index: 10;
 }
 .menu a
 {
     display: inline-block;
     padding: 5px;
-    color: #000;
+    color: #fff;
 }
 .menu li::before
 {
@@ -88,7 +90,7 @@
     top: 9px;
     width: 22px;
     height: 22px;
-    background-color: #e3e3e3;
+    background-color: #3e3e3e;
     border-radius: 50% 50% 50% 0;
     z-index: -1;
     transition: opacity 300ms ease-in-out;
@@ -338,4 +340,63 @@
     background-image: url('img/propiedad1.webp');
     height: 400px;
     filter: sepia(.5);
+}
+/**/
+.custom-shape-divider-top-1737664677 
+{
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #3e3e3e;
+}
+
+.custom-shape-divider-top-1737664677 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 113px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1737664677 .shape-fill {
+    fill: #FC621A;
+}
+/*contacto*/
+.contacto
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg,#3e3e3e 0%, #656565 80%);
+}
+.contacto_form
+{  width: 30%;
+    min-width: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+.contacto_form h2
+{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contacto_form input, .contacto_form textarea
+{
+    padding: 5px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    outline: none;
+    resize: none;
+}
+.contacto_form button
+{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #FC621A;
+    color: #fff;
+    border: none;
+    outline: none;
 }
