@@ -29,7 +29,6 @@
 .pie
 {
     width: 100%;
-    height: 10vh;
 }
 .cabecera
 {
@@ -426,6 +425,42 @@
     {
         width: 90%;
     }
+}
+/*pie*/
+.pie
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #151515;
+    color: #fff;
+}
+.pie_sectores
+{
+    padding: 10px;
+    width: 30%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+.pie_sectores img
+{
+    width: 300px;
+}
+.pie_sectores h2
+{
+    font-size: 35px;
+    margin: 30px 0;
+}
+.pie_sectores a
+{
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.pie_sectores i
+{
+    width: 30px;
 }
 @media screen and (width<=600px) 
 {
